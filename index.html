@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        border: 2px solid black;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .maincontent{
+        padding: 10px;
+        /* border: 2px solid black; */
+        margin: 5px;
+    }
+    .maincontent input{
+        padding: 10px 15px;
+        width: 200px;
+        /* background-color: aqua; */
+        color: black;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .maincontent button{
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .paraOutput{
+        border: 2px solid black;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(249, 249, 249);
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 15px;
+        color: rgb(248, 11, 11);
+        border-radius: 8px;
+    }
+    .ParaOutputColor{
+        color: green;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Palindrome Checker</h1>
+        <div class="maincontent">
+        <input type="text" placeholder="type something" class="js-input-box">
+        <button onclick="
+        check();
+        ">Check</button>
+        <div class="js-output-box"></div>
+    </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
