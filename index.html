@@ -5,48 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palindrome Checker</title>
 <style>
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 450px;
-        border: 2px solid black;
-        align-items: center;
-        border-radius: 8px;
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 2px solid #fff;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Main Content */
+.maincontent {
+    padding: 10px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+/* Input Box */
+.maincontent input {
+    padding: 12px 15px;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: 0.3s;
+
+}
+
+.maincontent input:focus {
+    border-color: #ff4081;
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.5);
+}
+
+/* Button */
+.maincontent button {
+    padding: 12px 15px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #ff4081;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.maincontent button:hover {
+    background: #e91e63;
+    transform: scale(1.05);
+}
+
+/* Output Box */
+.js-output-box {
+    border: 2px solid white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    color: #ff3b3b;
+    border-radius: 8px;
+}
+
+/* Green Success Message */
+.ParaOutputColor {
+    color: #0f9d58 !important;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
     }
-    .maincontent{
-        padding: 10px;
-        /* border: 2px solid black; */
-        margin: 5px;
-    }
-    .maincontent input{
-        padding: 10px 15px;
-        width: 200px;
-        /* background-color: aqua; */
-        color: black;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .maincontent button{
-        padding: 10px 15px;
-        border-radius: 10px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .paraOutput{
-        border: 2px solid black;
-        align-items: center;
-        text-align: center;
-        background-color: rgb(249, 249, 249);
-        font-size: 20px;
-        font-weight: bold;
-        padding: 10px 15px;
-        color: rgb(248, 11, 11);
-        border-radius: 8px;
-    }
-    .ParaOutputColor{
-        color: green;
-    }
+}
+
 
 </style>
 </head>
